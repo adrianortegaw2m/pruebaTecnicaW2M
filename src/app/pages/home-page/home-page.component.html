@@ -1,0 +1,52 @@
+<!-- navbar -->
+<nav class="navbar">
+  <div class="logo"></div>
+  <div class="crud">
+    <span>CRUD</span>
+  </div>
+</nav>
+
+<!-- searchBar -->
+<section class="search-wrapper">
+  <div class="searchBar">
+    <form>
+      <input type="text" placeholder="Busca un héroe">
+      <button type="submit">
+        <img src="/search.png" alt="">
+      </button>
+    </form>
+  </div>
+  <button class="extra-button" (click)="openModal()">
+    <img src="/add.png" alt="">
+    <span>Crear nuevo héroe</span>
+  </button>
+</section>
+
+<app-base-modal *ngIf="isModalOpen" title="Crear nuevo héroe" buttonLabel="Crear nuevo héroe" (close)="closeModal()"
+  (save)="addHero($event)"></app-base-modal>
+
+
+
+<!-- cards -->
+<section class="container-cards">
+  <div class="title-cards">
+    <h1>Héroes más allá de la imaginación</h1>
+    <h6>Desde tiempos inmemoriales, la humanidad ha soñado con figuras extraordinarias capaces de desafiar los límites
+      de la realidad.</h6>
+  </div>
+</section>
+
+<app-heroes />
+
+<footer>
+  <div class="footer-section">
+    <span>© 2025 SUPERHEROCRUD, Inc</span>
+    <div class="social-media">
+      <img src="/Vector.png" alt="">
+      <img src="/Vector-1.png" alt="">
+      <img src="/Vector-2.png" alt="">
+      <img src="/Vector-3.png" alt="">
+      <img src="/Vector-4.png" alt="">
+    </div>
+  </div>
+</footer>

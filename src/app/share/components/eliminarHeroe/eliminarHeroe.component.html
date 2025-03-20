@@ -1,0 +1,21 @@
+<div class="modal-overlay" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>Eliminar héroe</h2>
+      <button class="close-button" (click)="closeModal()">✖</button>
+    </div>
+
+    <div class="modal-body">
+      <img src="/caution.png" alt="Cuidado!">
+      <div class="body-text">
+        <span class="text-bolder">¿Estás seguro de querer eliminar este héroe?</span>
+        <span>Una vez eliminado no podrás revertir esta acción.</span>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button (click)="closeModal()" class="cancel-btn">Cancelar</button>
+      <button type="submit" (click)="deleteHeroe()">Sí, eliminar.</button>
+    </div>
+  </div>
+</div>

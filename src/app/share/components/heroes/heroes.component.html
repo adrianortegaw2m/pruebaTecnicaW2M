@@ -1,0 +1,29 @@
+<div class="heroes-container">
+  <div class="heroes-list">
+    <div class="hero-card" *ngFor="let hero of heroes | async">
+      <div class="hero-image-container">
+        <img [src]="hero.image" [alt]="hero.name">
+      </div>
+      <div class="hero-info">
+        <h3>{{ hero.name }}</h3>
+        <p class="occupation">{{ hero.occupation }}</p>
+        <p class="description">{{ hero.description }}</p>
+        <p class="location">{{ hero.location }}</p>
+      </div>
+      <div class="hero-actions">
+        <button class="edit-btn"><img src="/Editar.png" alt=""><span>Editar</span></button>
+        <button class="delete-btn" (click)="openModalDelete(hero.id)">
+          <span>Eliminar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="showmore-container" *ngIf="hasMoreHeroes">
+    <button class="showmore-btn" (click)="loadMore()"><span>Ver más</span></button>
+  </div>
+</div>
+
+<app-eliminar-heroe *ngIf="isModalOpenDelete && heroIdToDelete !== null" [heroId]="heroIdToDelete"
+  (close)="closeModalDelete()" (deleted)="onHeroDeleted($event)">
+</app-eliminar-heroe>

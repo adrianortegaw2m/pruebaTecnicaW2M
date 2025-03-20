@@ -1,27 +1,36 @@
 # Superhero
+Day 1
+1. Clonar repositorio
+2. Instalar Angular Material 18.2.14.
+3. Pages.
+4. Home-page.
+5. Share / Components
+6. Routing.
+7. Estilos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Day 2
+8. Mockup api.
+9. instalar json server
+10. crear db.json
+11. levantar mock server.
+12. estilar cartas y añadir en json desripcion y ubi.
+13. añadir botones a las cards.
+14. implementacion de funciones: 
+15. Crear un heroe. Implementar popup o modal. Implementar recogida de datos. Enviar a json. Enviar imagen en Base64 para poder guardarla. 
+16. Borrar heroe por btn-id.
 
-## Development server
+Day 3
+17. Implementar modal de borrar heroe.
+18. Snackbars, hacer un componente unico para asi reutilizarlo y llamarlo en los componentes que la usen. Evitamos codigo repe.
+19. Creacion de baseModal (no lo habia pensado antes) para solo cambiar el title entre crear o editar los heroes. asi evito codigo repe.
+20. implementar los cambios en home page, y cambiar lógicas.
+21. crear editarHeroes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+GUIA DE USO: 
+1. Levantar proyecto -> ng serve -o
+2. Levantar mockserver. -> json-server --watch db.json --port 3000
+3. Abrir url localhost:4200
 
-## Code scaffolding
+REFERENCIAS: 
+chatgpt -> algunas dudas de estilación. metodos observable. editar snackbar de angular material (no me dejaba sin !important). carga de los heroes al revés (.reverse). .pipe . 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

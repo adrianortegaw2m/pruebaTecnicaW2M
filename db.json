@@ -1,0 +1,116 @@
+{
+  "heroes": [
+    {
+      "id": "1",
+      "name": "Superman",
+      "occupation": "Reporter",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg",
+      "description": "Un kryptoniano con poderes sobrehumanos que protege la Tierra como Superman.",
+      "location": "Metropolis, USA"
+    },
+    {
+      "id": "2",
+      "name": "Batman",
+      "occupation": "Businessman",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
+      "description": "Un detective y experto en combate que lucha contra el crimen en Gotham.",
+      "location": "Gotham City, USA"
+    },
+    {
+      "id": "3",
+      "name": "Wonder Woman",
+      "occupation": "Amazon Warrior",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/807.jpg",
+      "description": "Una princesa amazona con fuerza sobrehumana y un lazo de la verdad.",
+      "location": "Themyscira"
+    },
+    {
+      "id": "4",
+      "name": "Flash",
+      "occupation": "Forensic Scientist",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/891.jpg",
+      "description": "El hombre más rápido del mundo con la capacidad de manipular la Speed Force.",
+      "location": "Central City, USA"
+    },
+    {
+      "id": "5",
+      "name": "Green Lantern",
+      "occupation": "Test Pilot",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/697.jpg",
+      "description": "Un miembro de los Green Lantern Corps que protege el universo con su anillo de poder.",
+      "location": "Coast City, USA"
+    },
+    {
+      "id": "6",
+      "name": "Aquaman",
+      "occupation": "King of Atlantis",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/634.jpg",
+      "description": "El gobernante de Atlantis con la habilidad de comunicarse con la vida marina.",
+      "location": "Atlantis"
+    },
+    {
+      "id": "7",
+      "name": "Spider-Man",
+      "occupation": "Student / Photographer",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/133.jpg",
+      "description": "Un joven con habilidades arácnidas que protege Nueva York del crimen.",
+      "location": "New York City, USA"
+    },
+    {
+      "id": "8",
+      "name": "Iron Man",
+      "occupation": "Industrialist",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
+      "description": "Un genio multimillonario que usa una armadura de alta tecnología para luchar contra el mal.",
+      "location": "New York City, USA"
+    },
+    {
+      "id": "9",
+      "name": "Captain America",
+      "occupation": "Soldier",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg",
+      "description": "Un super soldado mejorado que lucha por la justicia y la libertad.",
+      "location": "Washington D.C., USA"
+    },
+    {
+      "id": "10",
+      "name": "Thor",
+      "occupation": "God of Thunder",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/140.jpg",
+      "description": "Un dios asgardiano con un poderoso martillo que lucha por proteger los nueve reinos.",
+      "location": "Asgard"
+    },
+    {
+      "id": "11",
+      "name": "Hulk",
+      "occupation": "Scientist",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/83.jpg",
+      "description": "Un científico expuesto a radiación gamma que se convierte en un gigante de fuerza descomunal.",
+      "location": "USA"
+    },
+    {
+      "id": "12",
+      "name": "Black Widow",
+      "occupation": "Spy",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/698.jpg",
+      "description": "Una espía y experta en combate altamente entrenada.",
+      "location": "Russia / USA"
+    },
+    {
+      "id": "14",
+      "name": "Black Panther",
+      "occupation": "King of Wakanda",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/247.jpg",
+      "description": "El rey de Wakanda con habilidades mejoradas y una tecnología avanzada.",
+      "location": "Wakanda"
+    },
+    {
+      "id": "15",
+      "name": "Deadpool",
+      "occupation": "Mercenary",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/835.jpg",
+      "description": "Un mercenario con un factor de curación y un sentido del humor único.",
+      "location": "Unknown"
+    }
+  ]
+}
