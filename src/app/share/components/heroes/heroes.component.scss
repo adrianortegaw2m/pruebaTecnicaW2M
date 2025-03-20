@@ -28,6 +28,8 @@
 }
 
 .hero-image-container {
+  aspect-ratio: 4/3;
+  overflow: hidden;
   width: 100%;
   height: 46%;
   display: flex;
@@ -38,8 +40,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center -50px;
+  object-position: center 20%;
 }
+
+
 
 .hero-info {
   width: 100%;

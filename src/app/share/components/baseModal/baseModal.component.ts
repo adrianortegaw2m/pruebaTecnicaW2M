@@ -14,13 +14,12 @@ import { HeroService } from '../../services/heroes.service';
 })
 export class BaseModalComponent {
   @Input() title: string = '';
-  @Input() hero: any = { name: '', occupation: '', location: '', description: '' };
+  @Input() hero: any = { name: '', occupation: '', location: '', description: '', termsAccepted: false };
   @Input() buttonLabel: string = 'Guardar';
   @Output() close = new EventEmitter<void>();
   @Output() save = new EventEmitter<any>();
 
   constructor(private readonly heroService: HeroService) { }
-
 
   selectedFileName: string = '';
   selectedFile: File | null = null;
@@ -37,11 +36,10 @@ export class BaseModalComponent {
 
   saveHero() {
     if (this.isFormValid()) {
-      this.heroService.saveHero(this.hero, this.selectedFile).subscribe(() => {
-        this.closeModal();
-      });
+      this.save.emit({ hero: this.hero, file: this.selectedFile });
     }
   }
+
 
   isFormValid() {
     return this.hero.name && this.hero.occupation && this.hero.location && this.hero.description && this.hero.termsAccepted;

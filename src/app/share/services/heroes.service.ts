@@ -8,15 +8,15 @@ import { SnackbarComponent } from '../components/snackbar/snackbar.component';
   providedIn: 'root'
 })
 export class HeroService {
-  private apiUrl = 'http://localhost:3000/heroes';
-  private heroesSubject = new BehaviorSubject<any[]>([])
+  private readonly apiUrl = 'http://localhost:3000/heroes';
+  private readonly heroesSubject = new BehaviorSubject<any[]>([])
   public heroes = this.heroesSubject.asObservable();
 
   private allHeroes: any[] = [];
   private currentPage = 0;
-  private pageSize = 12;
+  private readonly pageSize = 12;
 
-  private snackBar = inject(MatSnackBar);
+  private readonly snackBar = inject(MatSnackBar);
 
   constructor(public http: HttpClient) { }
 
@@ -70,6 +70,40 @@ export class HeroService {
           this.showSnackbar('Héroe creado correctamente');
         })
       );
+    }
+  }
+
+  saveEditedHero(hero: any, file: File | null): Observable<any> {
+    return new Observable(observer => {
+      if (file) {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          hero.image = reader.result;
+          this.updateHeroOnServer(hero, observer);
+        };
+        reader.onerror = error => observer.error(error);
+      } else {
+        this.updateHeroOnServer(hero, observer);
+      }
+    });
+  }
+
+  // Función separada para actualizar el héroe en el servidor
+  private updateHeroOnServer(hero: any, observer: any) {
+    this.http.put(`${this.apiUrl}/${hero.id}`, hero).subscribe(response => {
+      this.replaceHeroInList(response);
+      this.showSnackbar('Héroe actualizado correctamente');
+      observer.next(response);
+      observer.complete();
+    });
+  }
+
+  private replaceHeroInList(updatedHero: any) {
+    const index = this.allHeroes.findIndex(hero => hero.id === updatedHero.id);
+    if (index !== -1) {
+      this.allHeroes[index] = updatedHero; // Actualiza el héroe en la misma posición
+      this.heroesSubject.next([...this.allHeroes]); // Emite la lista actualizada
     }
   }
 

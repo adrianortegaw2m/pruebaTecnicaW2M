@@ -1,24 +1,24 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { HeroesComponent } from '../../share/components/heroes/heroes.component';
 import { CommonModule } from '@angular/common';
-import { BaseModalComponent } from '../../share/components/baseModal/baseModal.component';
+import { CrearHeroeComponent } from "../../share/components/crearHeroe/crearHeroe.component";
 
 @Component({
   standalone: true,
-  imports: [HeroesComponent, BaseModalComponent, CommonModule],
+  imports: [HeroesComponent, CommonModule, CrearHeroeComponent],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class HomePageComponent {
-  isModalOpen = false;
+  isModalOpenCreate = false;
 
-  openModal() {
-    this.isModalOpen = true;
+  openModalCreate() {
+    console.log("openModalCreate() llamado");
+    this.isModalOpenCreate = true;
   }
-
-  closeModal() {
-    this.isModalOpen = false;
+  closeModalCreate() {
+    this.isModalOpenCreate = false;
   }
 
   addHero(hero: any) {

@@ -11,7 +11,8 @@
         <p class="location">{{ hero.location }}</p>
       </div>
       <div class="hero-actions">
-        <button class="edit-btn"><img src="/Editar.png" alt=""><span>Editar</span></button>
+        <button class="edit-btn" (click)="openModalEdit(hero)"><img src="/Editar.png"
+            alt=""><span>Editar</span></button>
         <button class="delete-btn" (click)="openModalDelete(hero.id)">
           <span>Eliminar</span>
         </button>
@@ -27,3 +28,6 @@
 <app-eliminar-heroe *ngIf="isModalOpenDelete && heroIdToDelete !== null" [heroId]="heroIdToDelete"
   (close)="closeModalDelete()" (deleted)="onHeroDeleted($event)">
 </app-eliminar-heroe>
+
+<app-editar-heroe *ngIf="isModalOpenEdit" [hero]="heroToEdit" (close)="closeModalEdit()" (save)="onHeroEdited($event)">
+</app-editar-heroe>

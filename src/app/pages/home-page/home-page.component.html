@@ -16,16 +16,13 @@
       </button>
     </form>
   </div>
-  <button class="extra-button" (click)="openModal()">
+  <button class="extra-button" (click)="openModalCreate()">
     <img src="/add.png" alt="">
     <span>Crear nuevo héroe</span>
   </button>
 </section>
 
-<app-base-modal *ngIf="isModalOpen" title="Crear nuevo héroe" buttonLabel="Crear nuevo héroe" (close)="closeModal()"
-  (save)="addHero($event)"></app-base-modal>
-
-
+<app-crear-heroe *ngIf="isModalOpenCreate" (close)="closeModalCreate()"></app-crear-heroe>
 
 <!-- cards -->
 <section class="container-cards">

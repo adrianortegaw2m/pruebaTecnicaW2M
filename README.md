@@ -25,6 +25,13 @@ Day 3
 19. Creacion de baseModal (no lo habia pensado antes) para solo cambiar el title entre crear o editar los heroes. asi evito codigo repe.
 20. implementar los cambios en home page, y cambiar lógicas.
 21. crear editarHeroes
+22. Refactorizar -> Hemos implementado baseModal pasandole titulo y buttonLabel para que depende de si pulsamos crear o editar sea uno u otro, pero el contenido es el mismo.
+23. Implementacion servicios edicion.
+24. Implementacion y refractor de code en el home y en heroes para que funcione bien el boton.
+25. Poner que venga la casilla desmarcada de los terminos al editar.
+
+Day 4.
+26. Responsive.
 
 GUIA DE USO: 
 1. Levantar proyecto -> ng serve -o
@@ -32,5 +39,9 @@ GUIA DE USO:
 3. Abrir url localhost:4200
 
 REFERENCIAS: 
-chatgpt -> algunas dudas de estilación. metodos observable. editar snackbar de angular material (no me dejaba sin !important). carga de los heroes al revés (.reverse). .pipe . 
+chatgpt -> algunas dudas de estilación. metodos observable. editar snackbar de angular material (no me dejaba sin !important). carga de los heroes al revés (.reverse). .pipe . usar mejor ... next . 
+stackoverflown
+angular uiux doc
+angular material doc and components
+
 

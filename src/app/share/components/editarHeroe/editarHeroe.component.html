@@ -1,0 +1,3 @@
+<app-base-modal *ngIf="hero" [title]="'Editar Héroe'" [buttonLabel]="'Guardar Cambios'" [hero]="hero"
+  (close)="closeModal()" (save)="saveHero()">
+</app-base-modal>

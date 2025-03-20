@@ -42,7 +42,7 @@
           <input type="checkbox" id="terms" [(ngModel)]="hero.termsAccepted" name="terms" required />
           <label for="terms">Acepto los <span>Términos y condiciones</span></label>
         </div>
-        <button type="submit" [disabled]="!isFormValid()">Crear Héroe</button>
+        <button type="submit" [disabled]="!isFormValid()"> {{ buttonLabel }}</button>
       </div>
     </form>
   </div>
