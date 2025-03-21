@@ -1,44 +1,47 @@
-<!-- navbar -->
-<nav class="navbar">
-  <div class="logo"></div>
-  <div class="crud">
+<!-- `hero` (Banner) -->
+<nav class="hero">
+  <div class="hero_logo"></div>
+  <div class="hero_text">
     <span>CRUD</span>
   </div>
 </nav>
 
-<!-- searchBar -->
-<section class="search-wrapper">
-  <div class="searchBar">
-    <form>
-      <input type="text" placeholder="Busca un héroe">
-      <button type="submit">
-        <img src="/search.png" alt="">
+<!-- 'search-bar' (Barra de búsqueda) -->
+<section class="search-bar">
+  <div class="search-bar_body">
+    <form class="search-bar_body_form">
+      <input class="search-bar_body_input" type="text" placeholder="Busca un héroe">
+      <button class="search-bar_body_button" type="submit">
+        <img class="search-bar_body_button-image" src="/search.png" alt="Lupa de búsqueda">
       </button>
     </form>
   </div>
-  <button class="extra-button" (click)="openModalCreate()">
+  <button class="search-bar_extrabutton" (click)="openModalCreate()">
     <img src="/add.png" alt="">
     <span>Crear nuevo héroe</span>
   </button>
 </section>
 
+<!-- `app-crear-heroe` (Importación del componente crear-héroe) -->
 <app-crear-heroe *ngIf="isModalOpenCreate" (close)="closeModalCreate()"></app-crear-heroe>
 
-<!-- cards -->
-<section class="container-cards">
-  <div class="title-cards">
+<!-- `cards` (Cartas) -->
+<section class="cards-title">
+  <div class="cards-title_body">
     <h1>Héroes más allá de la imaginación</h1>
     <h6>Desde tiempos inmemoriales, la humanidad ha soñado con figuras extraordinarias capaces de desafiar los límites
       de la realidad.</h6>
   </div>
 </section>
 
+<!-- `app-heroes` (Importación del componente heroes (Cartas)) -->
 <app-heroes />
 
-<footer>
-  <div class="footer-section">
+<!-- `footer` (Pie de página) -->
+<footer class="footer">
+  <div class="footer_body">
     <span>© 2025 SUPERHEROCRUD, Inc</span>
-    <div class="social-media">
+    <div class="footer_body_social-media">
       <img src="/Vector.png" alt="">
       <img src="/Vector-1.png" alt="">
       <img src="/Vector-2.png" alt="">

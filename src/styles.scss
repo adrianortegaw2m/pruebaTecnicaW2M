@@ -1,4 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #8A42FB;
+  --secondary-color: #E7D8FE;
+  --text-color: #343434;
+  --input-bg-color: #254E7E17;
+  --checkbox-checked-bg: #A855F7;
+  --modal-bg: white;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+  --font-primary: 'Open Sans', sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-small: 14px;
+  --font-size-title: 20px;
+
+  --border-radius-large: 80px;
+  --border-radius-medium: 56px;
+  --border-radius-small: 40px;
+  --border-radius-input: 8px;
+  --border-radius-button: 32px;
+
+  --input-padding: 12px;
+  --button-padding: 0 16px;
+  --modal-width: 940px;
+}
+
 * {
   margin: 0;
   padding: 0 auto;

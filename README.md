@@ -31,12 +31,15 @@ Day 3
 25. Poner que venga la casilla desmarcada de los terminos al editar.
 
 Day 4.
-26. Responsive.
+26. Pasar de px a rem.
+27. Comentarios estilo W2M y estructura BEM.
+28. Evitar usar Any.
+29. Abrir el mockserver sin necesidad de poner el comando en cmd, pondremos un script en package.json. 
+30. Pasar de CSS a SCSS. Y usar :root para atributos que se repiten.
+31. 
 
 GUIA DE USO: 
-1. Levantar proyecto -> ng serve -o
-2. Levantar mockserver. -> json-server --watch db.json --port 3000
-3. Abrir url localhost:4200
+1. Abrir proyecto con npm start en la cmd en el cd del proyecto.
 
 REFERENCIAS: 
 chatgpt -> algunas dudas de estilación. metodos observable. editar snackbar de angular material (no me dejaba sin !important). carga de los heroes al revés (.reverse). .pipe . usar mejor ... next . 
