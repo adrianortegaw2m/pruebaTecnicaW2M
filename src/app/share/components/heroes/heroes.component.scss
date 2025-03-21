@@ -1,34 +1,34 @@
 .heroes {
   padding-top: 4rem;
   text-align: center;
-  max-width: 1600px;
+  max-width: 100rem;
   margin: auto;
   padding-bottom: 4rem;
 
   &_list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    max-width: 1600px;
+    gap: var(--grid-gap);
+    max-width: 100rem;
     margin: 0 auto;
     padding: 0 auto;
 
     &_card {
       aspect-ratio: 4/3;
-      background: #FFFF;
-      box-shadow: 0px 10px 40px #0000001A;
+      background: var(--card-bg-color);
+      box-shadow: var(--card-shadow);
       display: flex;
       flex-direction: column;
       align-items: stretch;
       overflow: hidden;
-      min-height: 510px;
+      min-height: var(--card-min-height);
       width: 100%;
 
       &_image-container {
         aspect-ratio: 4/3;
         overflow: hidden;
         width: 100%;
-        height: 46%;
+        height: var(--card-height-img);
         display: flex;
         justify-content: center;
 
@@ -43,8 +43,8 @@
       &_info {
         width: 100%;
         text-align: left;
-        font-family: 'Open Sans';
-        color: #343434;
+        font-family: var(--font-primary);
+        color: var(--text-color);
         flex-grow: 1;
         display: flex;
         flex-direction: column;
@@ -54,29 +54,28 @@
         &_occupation,
         &_description,
         &_location {
-          margin: 0px 15px;
+          margin: 0 .9375rem;
           line-height: 140%;
-          letter-spacing: 0%;
         }
 
         h3 {
-          font-size: 20px;
-          font-weight: 700;
+          font-size: var(--font-size-title);
+          font-weight: var(--font-weight-bold);
         }
 
         &_occupation {
-          font-size: 16px;
-          font-weight: 700;
+          font-size: var(--font-size-base);
+          font-weight: var(--font-weight-bold);
         }
 
         &_description,
         &_location {
-          font-size: 14px;
-          font-weight: 400;
+          font-size: var(--font-size-small);
+          font-weight: var(--font-weight-regular);
         }
 
         &_location {
-          font-size: 16px;
+          font-size: var(--font-size-base);
         }
       }
 
@@ -89,38 +88,38 @@
 
         button {
           flex: 1;
-          padding: 10px 0;
+          padding: .625rem 0;
           border: none;
-          border-radius: 9999px;
+          border-radius: 624.9375rem;
           cursor: pointer;
           color: white;
-          font-family: 'Open Sans';
-          font-size: 16px;
+          font-family: var(--font-primary);
+          font-size: var(--font-size-base);
         }
 
         &_edit-btn {
-          background-color: #8A42FB;
+          background-color: var(--primary-color);
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 0 0 15px 15px;
+          margin: 0 0 .9375rem .9375rem;
 
           img {
-            margin-right: 10px;
+            margin-right: .625rem;
           }
         }
 
         &_delete-btn {
-          background-color: #F3F3F3;
-          margin: 0 15px 15px 0;
+          background-color: var(--background-light);
+          margin: 0 .9375rem .9375rem 0;
 
           span {
-            color: #343434;
+            color: var(--text-color);
           }
         }
 
         button+button {
-          margin-left: 10px;
+          margin-left: .625rem;
         }
       }
 
@@ -128,16 +127,15 @@
         padding: 4rem 4rem 0 4rem;
 
         &_btn {
-          padding: 10px 40px;
+          padding: .625rem 2.5rem;
           border: none;
-          border-radius: 9999px;
-          background-color: #8A42FB;
+          border-radius: 624.9375rem;
+          background-color: var(--primary-color);
           color: white;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: 0%;
-          font-family: 'Open Sans';
+          font-weight: var(--font-weight-regular);
+          font-size: var(--font-size-base);
+          line-height: 1.5rem;
+          font-family: var(--font-primary);
           cursor: pointer;
         }
       }

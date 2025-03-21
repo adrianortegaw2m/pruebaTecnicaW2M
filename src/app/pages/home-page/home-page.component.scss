@@ -2,19 +2,19 @@
   background: url('/banner.png') center / 105% no-repeat;
   position: relative;
   width: 100%;
-  min-height: 480px;
+  min-height: 30rem;
 
   &_logo {
     margin: 3rem;
     background: url('/Logo.png') center / contain no-repeat;
     position: absolute;
-    width: 250px;
-    height: 115px;
+    width: 15.625rem;
+    height: 7.1875rem;
   }
 
   &_text {
     font-family: var(--font-secondary);
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 120%;
     position: absolute;
     bottom: 5%;
@@ -36,10 +36,10 @@
     align-items: center;
     background-color: white;
     justify-content: center;
-    width: 880px;
-    padding: 16px;
+    width: 55rem;
+    padding: 1rem;
     border-radius: var(--border-radius-large);
-    gap: 16px;
+    gap: 1rem;
     box-shadow: var(--box-shadow);
     position: relative;
   }
@@ -49,17 +49,17 @@
     border: none;
     border-radius: var(--border-radius-small);
     cursor: pointer;
-    height: 72px;
-    width: 64px;
-    gap: 8px;
+    height: 4.5rem;
+    width: 4rem;
+    gap: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   &_body_button-image {
-    width: 18.5px;
-    height: 18.5px;
+    width: 1.1563rem;
+    height: 1.1563rem;
   }
 
   &_extrabutton {
@@ -68,18 +68,18 @@
     border: none;
     border-radius: var(--border-radius-medium);
     cursor: pointer;
-    height: 54px;
-    width: 200px;
+    height: 3.375rem;
+    width: 12.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     position: absolute;
-    right: 150px;
+    right: 9.375rem;
 
     img {
-      margin-right: 10px;
+      margin-right: .625rem;
     }
   }
 
@@ -94,8 +94,8 @@
     height: 100%;
     border: none;
     outline: none;
-    font-size: 16px;
-    padding-left: 16px;
+    font-size: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -106,11 +106,11 @@
 
   &_body {
     text-align: center;
-    width: 660px;
+    width: 41.25rem;
 
     h1 {
       font-family: var(--font-primary);
-      font-size: 31px;
+      font-size: 1.9375rem;
       font-weight: 700;
       line-height: 140%;
       color: var(--primary-color);
@@ -118,7 +118,7 @@
 
     h6 {
       font-family: var(--font-primary);
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 140%;
       font-weight: 400;
       padding-top: 1rem;
@@ -129,12 +129,12 @@
 .footer {
   padding: 2rem 0;
   text-align: center;
-  max-width: 1600px;
+  max-width: 100rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: .0625rem solid rgba(0, 0, 0, 0.1);
 
   &_body {
     display: flex;
@@ -146,7 +146,7 @@
       line-height: 100%;
       font-family: 'Comfortaa';
       font-weight: 700;
-      font-size: 12px;
+      font-size: .75rem;
     }
 
     &_social-media {
@@ -155,7 +155,7 @@
       img {
         width: auto;
         height: auto;
-        padding: 5px;
+        padding: .3125rem;
         cursor: pointer;
       }
     }

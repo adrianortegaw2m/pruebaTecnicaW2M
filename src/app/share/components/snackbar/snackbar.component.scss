@@ -10,16 +10,16 @@
   align-items: center;
   justify-content: center;
   background-color: var(--snackbar-bg-color);
-  padding: 10px;
+  padding: .625rem;
   border-radius: var(--border-radius-snackbar);
   width: 100%;
 
   &_icon {
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     object-fit: contain;
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: .625rem;
   }
 
   span {

@@ -12,8 +12,8 @@
 
   &_content {
     background: var(--modal-bg);
-    padding: 30px;
-    border-radius: 24px;
+    padding: 1.875rem;
+    border-radius: 1.5rem;
     width: var(--modal-width);
     box-shadow: var(--box-shadow);
     position: relative;
@@ -22,7 +22,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
 
       h2 {
         margin: 0 auto;
@@ -42,18 +42,18 @@
     &_form {
       &_row {
         display: flex;
-        gap: 28px;
+        gap: 1.75rem;
 
         &_group {
           flex: 1;
           min-width: 0;
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: .5rem;
 
           input {
             width: 100%;
-            min-height: 56px;
+            min-height: 3.5rem;
             border-radius: var(--border-radius-input);
             border: none;
             background-color: var(--input-bg-color);
@@ -72,13 +72,13 @@
       &_group {
         display: flex;
         flex-direction: column;
-        margin: 14px 0;
-        gap: 8px;
+        margin: .875rem 0;
+        gap: .5rem;
 
         input,
         textarea {
           width: 100%;
-          min-height: 56px;
+          min-height: 3.5rem;
           border-radius: var(--border-radius-input);
           border: none;
           background-color: var(--input-bg-color);
@@ -88,17 +88,17 @@
 
         textarea {
           resize: vertical;
-          height: 100px;
+          height: 6.25rem;
         }
 
         &_file-input {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: .75rem;
 
           button {
             background: var(--secondary-color);
-            height: 48px;
+            height: 3rem;
             color: var(--text-color);
             border: none;
             border-radius: var(--border-radius-button);
@@ -124,38 +124,38 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 15px;
+        margin-top: .9375rem;
 
         &_checkbox-group {
           display: flex;
           flex-direction: row;
           align-items: center;
-          gap: 10px;
+          gap: .625rem;
           color: var(--text-color);
 
           input[type="checkbox"] {
             appearance: none;
-            width: 18px;
-            height: 18px;
-            border-radius: 4px;
-            border: 2px solid #000000;
+            width: 1.125rem;
+            height: 1.125rem;
+            border-radius: .25rem;
+            border: .125rem solid #000000;
             display: inline-block;
             position: relative;
             cursor: pointer;
             min-height: auto;
             background-color: transparent;
-            padding: 8px;
+            padding: .5rem;
           }
 
           input[type="checkbox"]:checked {
-            border: 2px solid transparent;
+            border: .125rem solid transparent;
             background-color: var(--checkbox-checked-bg);
           }
 
           input[type="checkbox"]:checked::after {
             content: '✔';
             color: white;
-            font-size: 12px;
+            font-size: .75rem;
             font-weight: bold;
             position: absolute;
             top: 50%;
@@ -174,7 +174,7 @@
 
         button[type="submit"] {
           background: var(--primary-color);
-          height: 48px;
+          height: 3rem;
           color: #FFFFFF;
           border: none;
           border-radius: var(--border-radius-button);
