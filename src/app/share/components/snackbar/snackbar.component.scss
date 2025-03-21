@@ -5,29 +5,29 @@
   width: 100%;
 }
 
-.snackbar-container {
+.snackbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #29F4B0;
+  background-color: var(--snackbar-bg-color);
   padding: 10px;
-  border-radius: 4px;
+  border-radius: var(--border-radius-snackbar);
   width: 100%;
-}
 
-.snackbar-icon {
-  height: 20px;
-  width: 20px;
-  object-fit: contain;
-  margin-right: auto;
-  margin-left: 10px;
-}
+  &_icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: 10px;
+  }
 
-.snackbar-container span {
-  color: black;
-  font-weight: 700;
-  font-family: 'Open Sans';
-  font-size: 16px;
-  flex: 1;
-  text-align: center;
+  span {
+    color: black;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    flex: 1;
+    text-align: center;
+  }
 }

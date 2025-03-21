@@ -4,18 +4,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--overlay-bg);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Open Sans';
+  font-family: var(--font-primary);
 
   &_content {
-    background: white;
+    background: var(--modal-bg);
     padding: 30px;
     border-radius: 24px;
-    width: 700px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: var(--modal-width-small);
+    box-shadow: var(--box-shadow);
     position: relative;
 
     &_header {
@@ -26,17 +26,17 @@
 
       h2 {
         margin: 0 auto;
-        font-size: 20px;
+        font-size: var(--font-size-title);
         font-weight: 600;
         line-height: 120%;
-        color: #231E20;
+        color: var(--text-color-dark);
       }
 
       &_close-button {
         width: auto;
         background: none;
         border: none;
-        font-size: 18px;
+        font-size: var(--font-size-large);
         cursor: pointer;
         color: black;
       }
@@ -57,13 +57,13 @@
         display: flex;
         flex-direction: column;
         margin-left: 30px;
-        font-size: 16px;
+        font-size: var(--font-size-base);
         font-weight: 400;
         line-height: 140%;
 
         &_bolder {
           font-weight: 700;
-          font-size: 20px;
+          font-size: var(--font-size-title);
           line-height: 140%;
         }
       }
@@ -75,27 +75,26 @@
       margin-top: 40px;
       gap: 18px;
 
-
       button {
         height: 40px;
         width: 135px;
         border: none;
-        border-radius: 32px;
-        padding: 0 16px;
+        border-radius: var(--border-radius-button);
+        padding: var(--button-padding);
         cursor: pointer;
         font-weight: 400;
-        font-size: 16px;
-        font-family: 'Open Sans';
+        font-size: var(--font-size-base);
+        font-family: var(--font-primary);
       }
 
       button[type="submit"] {
-        background: #8A42FB;
+        background: var(--primary-color);
         color: #FFFFFF;
       }
 
       &_cancel-btn {
-        background-color: #F3F3F3;
-        color: #343434;
+        background-color: var(--background-light);
+        color: var(--text-color);
       }
     }
   }

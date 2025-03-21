@@ -1,27 +1,27 @@
-<div class="heroes-container">
-  <div class="heroes-list">
-    <div class="hero-card" *ngFor="let hero of heroes | async">
-      <div class="hero-image-container">
+<div class="heroes">
+  <div class="heroes_list">
+    <div class="heroes_list_card" *ngFor="let hero of heroes | async">
+      <div class="heroes_list_card_image-container">
         <img [src]="hero.image" [alt]="hero.name">
       </div>
-      <div class="hero-info">
+      <div class="heroes_list_card_info">
         <h3>{{ hero.name }}</h3>
-        <p class="occupation">{{ hero.occupation }}</p>
-        <p class="description">{{ hero.description }}</p>
-        <p class="location">{{ hero.location }}</p>
+        <p class="heroes_list_card_info_occupation">{{ hero.occupation }}</p>
+        <p class="heroes_list_card_info_description">{{ hero.description }}</p>
+        <p class="heroes_list_card_info_location">{{ hero.location }}</p>
       </div>
-      <div class="hero-actions">
-        <button class="edit-btn" (click)="openModalEdit(hero)"><img src="/Editar.png"
+      <div class="heroes_list_card_actions">
+        <button class="heroes_list_card_actions_edit-btn" (click)="openModalEdit(hero)"><img src="/Editar.png"
             alt=""><span>Editar</span></button>
-        <button class="delete-btn" (click)="openModalDelete(hero.id)">
+        <button class="heroes_list_card_actions_delete-btn" (click)="openModalDelete(hero.id)">
           <span>Eliminar</span>
         </button>
       </div>
     </div>
   </div>
 
-  <div class="showmore-container" *ngIf="hasMoreHeroes">
-    <button class="showmore-btn" (click)="loadMore()"><span>Ver más</span></button>
+  <div class="heroes_list_card_showmore-container" *ngIf="hasMoreHeroes">
+    <button class="heroes_list_card_showmore-container_btn" (click)="loadMore()"><span>Ver más</span></button>
   </div>
 </div>
 
